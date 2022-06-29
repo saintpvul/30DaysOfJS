@@ -1,1 +1,1 @@
-# 30DaysOsJS
+# 30DaysOfJS
