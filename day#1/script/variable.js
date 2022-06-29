@@ -1,4 +1,4 @@
-let myString = "it's string";
+plet myString = "it's string";
 let myBoolean = true;
 let myUndefined = undefined;
 let myNull = null;
