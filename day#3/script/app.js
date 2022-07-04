@@ -374,7 +374,7 @@ console.log(rectangleArea, rectanglePerimeter);
 
 // 4
 const circlePI = 3.14;
-const circleRadius = prompt(" Enter radios of current circle : ");
+const circleRadius = prompt(" Enter radius of current circle : ");
 const radiusToNum = parseFloat(circleRadius);
 const circleArea = circlePI * radiusToNum * radiusToNum;
 const circlePerimeter = 2 * circlePI * radiusToNum;
@@ -382,4 +382,3 @@ const circlePerimeter = 2 * circlePI * radiusToNum;
 console.log(circleArea, circlePerimeter);
 
 // 5
-const slope =
