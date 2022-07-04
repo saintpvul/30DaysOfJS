@@ -382,3 +382,57 @@ const circlePerimeter = 2 * circlePI * radiusToNum;
 console.log(circleArea, circlePerimeter);
 
 // 5
+
+// 9
+const hours = prompt("Enter hours : ");
+const ratePerHour = prompt("Enter rate per hour :");
+const hoursToNum = parseInt(hours);
+const rateToNum = parseInt(ratePerHour);
+const weeklyEarning = hoursToNum * rateToNum;
+console.log(weeklyEarning);
+
+// 10
+const yourName = prompt("Enter your name: ");
+if (yourName.length > 7) {
+  console.log("your name is long");
+} else {
+  console.log("your name is short");
+}
+// 11
+const yourFirstName = prompt(" Enter your name: ");
+const yourLastName = prompt(" Enter your last name: ");
+const nameLength = yourFirstName.length;
+const lastNameLength = yourLastName.length;
+if (nameLength > lastNameLength) {
+  console.log(
+    "Your first name, " +
+      yourFirstName +
+      " is longer than your family name, " +
+      yourLastName
+  );
+} else if (nameLength < lastNameLength) {
+  console.log(
+    "Your first name, " +
+      yourFirstName +
+      " is shorter than your family name, " +
+      yourLastName
+  );
+} else {
+  console.log(
+    "Your first name lenght, " +
+      yourFirstName +
+      " is equal your family name lenght, " +
+      yourLastName
+  );
+}
+
+// 12
+
+const wasBorn = prompt("Enter your birth year: ");
+const bornToInt = ~~wasBorn;
+const todayYear = new Date().getFullYear();
+const currentAge = todayYear - bornToInt;
+
+if (currentAge < 17) {
+  console.log("You are " + currentAge + ". You are old enough to drive");
+}
