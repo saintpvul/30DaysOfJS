@@ -319,3 +319,26 @@ console.log(sixTrue5);
 let on1 = "dragon";
 let on2 = "python";
 console.log((on1 && on2).includes("on"));
+
+// 7
+// i
+let yearEx = new Date();
+console.log(yearEx.getFullYear() + " year");
+// ii
+let monthEx = new Date();
+console.log(monthEx.getMonth() + " month");
+// iii
+let dateEx = new Date();
+console.log(dateEx.getDate() + " date");
+// iv
+let dayAsNumEx = new Date();
+console.log(dayAsNumEx.getDay() + " day");
+// v
+let hoursEx = new Date();
+console.log(hoursEx.getHours() + " hours");
+// vi
+let minutesEx = new Date();
+console.log(minutesEx.getMinutes() + " minutes");
+// vii
+let secondsElapsedEx = new Date();
+console.log(secondsElapsedEx.getTime() + " time in seconds from 1970");
