@@ -426,13 +426,36 @@ if (nameLength > lastNameLength) {
   );
 }
 
-// 12
-
+// !12
+const myAge = 27;
+const yourAge = prompt("Enter your age: ");
+const yourAgeInt = Number(yourAge);
+if(yourAgeInt > myAge){
+	console.log("Your age is " + )
+}
+// 13
 const wasBorn = prompt("Enter your birth year: ");
 const bornToInt = ~~wasBorn;
 const todayYear = new Date().getFullYear();
 const currentAge = todayYear - bornToInt;
+const allowAge = 17;
 
-if (currentAge < 17) {
-  console.log("You are " + currentAge + ". You are old enough to drive");
+if (currentAge > allowAge) {
+  console.log("You are " + currentAge + ". You are old enough to drive.");
+} else if (currentAge == allowAge) {
+  console.log(
+    "You are " +
+      currentAge +
+      ". You will be allowed to drive after " +
+      (18 - currentAge) +
+      " year."
+  );
+} else {
+  console.log(
+    "You are " +
+      currentAge +
+      ". You will be allowed to drive after " +
+      (18 - currentAge) +
+      " years."
+  );
 }
