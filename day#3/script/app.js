@@ -382,3 +382,4 @@ const circlePerimeter = 2 * circlePI * radiusToNum;
 console.log(circleArea, circlePerimeter);
 
 // 5
+const slope =
