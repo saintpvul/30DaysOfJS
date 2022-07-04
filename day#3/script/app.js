@@ -217,3 +217,105 @@ console.log(typeof isMarried0);
 console.log(typeof year);
 
 // 2
+let ten = 10;
+console.log(typeof ten);
+
+// 3
+
+let nineFloatToParse = 9.8;
+console.log(parseInt(nineFloatToParse));
+
+let nineFloat = 9.8;
+console.log(Math.ceil(nineFloat));
+
+// 4
+let booleanFalse1 = 2 > 6;
+let booleanFalse2 = 1 > 7 >= 1;
+let booleanFalse3 = 1 >= 5 > 1;
+
+let booleanTrue1 = 7 > 2;
+let booleanTrue2 = 5 > 3;
+let booleanTrue3 = 15 > 1;
+console.log(booleanFalse1);
+console.log(booleanFalse2);
+console.log(booleanFalse3);
+console.log(booleanTrue1);
+console.log(booleanTrue2);
+console.log(booleanTrue3);
+console.log("5");
+// 5
+// #1
+let true0 = 4 > 3; //  true
+console.log(true0);
+// #2
+let true1 = 4 >= 3; //  true
+console.log(true1);
+// #3
+let false0 = 4 < 3; // False
+console.log(false0);
+// #4
+let false1 = 4 <= 3; // false
+console.log(false1);
+// #5
+let true2 = 4 == 4; // true
+console.log(true2);
+// #6
+let true3 = 4 === 4; // true
+console.log(true3);
+// #7
+let false2 = 4 != 4; // false
+console.log(false2);
+// #8
+let false3 = 4 !== 4; // false
+console.log(false3);
+// #9
+let false4 = 4 != "4"; //false
+console.log(false4);
+// #10
+let true5 = 4 == "4"; //true
+console.log(true5);
+// #11
+let false5 = 4 === "4"; // false
+console.log(false5);
+// #12
+let python = "pythoon";
+let jargon = "jargon";
+console.log(jargon.length > python.length);
+
+console.log("6");
+
+// 6
+// #1
+let sixTrue0 = 4 > 3 && 10 < 12;
+console.log(sixTrue0);
+// #2
+let sixFalse0 = 4 > 3 && 10 > 12;
+console.log(sixFalse0);
+// #3
+let sixTrue1 = 4 > 3 || 10 < 12;
+console.log(sixTrue1);
+// #4
+let sixTrue2 = 4 > 3 || 10 > 12;
+console.log(sixTrue2);
+// #5
+let sixFalse1 = !(4 > 3);
+console.log(sixFalse1);
+// #6
+let sixTrue3 = !(4 < 3);
+console.log(sixTrue3);
+// #7
+let sixTrue4 = !false;
+console.log(sixTrue4);
+// #8
+let sixFalse2 = !(4 > 3 && 10 < 12);
+console.log(sixFalse2);
+// #9
+let sixFalse3 = !(4 > 3 && 10 > 12);
+console.log(sixFalse3);
+// #10
+let sixTrue5 = !(4 === "4");
+console.log(sixTrue5);
+// #11
+let on1 = "dragon";
+let on2 = "python";
+console.log((on1 && on2).includes("on"));
