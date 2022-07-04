@@ -342,3 +342,43 @@ console.log(minutesEx.getMinutes() + " minutes");
 // vii
 let secondsElapsedEx = new Date();
 console.log(secondsElapsedEx.getTime() + " time in seconds from 1970");
+
+// Exercise 2
+
+// 1
+const baseValue = prompt("Enter the base of a triangle : ");
+const heightValue = prompt("Enter the height of a triangle : ");
+
+const areaValue = 0.5 * baseValue * heightValue;
+console.log(areaValue);
+
+// 2
+const aSide = prompt(" Enter side A value : ");
+const bSide = prompt(" Enter side B value : ");
+const cSide = prompt(" Enter side C value : ");
+const aSideToNum = parseInt(aSide);
+const bSideToNum = parseInt(bSide);
+const cSideToNum = parseInt(cSide);
+const perimeter = aSideToNum + bSideToNum + cSideToNum;
+
+console.log(perimeter);
+
+// 3
+const lenght = prompt("Enter lenght of rectangle : ");
+const width = prompt("Enter width of rectangle : ");
+const lenghtToNum = parseInt(lenght);
+const widthToNum = parseInt(width);
+const rectangleArea = lenghtToNum * widthToNum;
+const rectanglePerimeter = 2 * (lenghtToNum + widthToNum);
+console.log(rectangleArea, rectanglePerimeter);
+
+// 4
+const circlePI = 3.14;
+const circleRadius = prompt(" Enter radios of current circle : ");
+const radiusToNum = parseFloat(circleRadius);
+const circleArea = circlePI * radiusToNum * radiusToNum;
+const circlePerimeter = 2 * circlePI * radiusToNum;
+
+console.log(circleArea, circlePerimeter);
+
+// 5
