@@ -426,12 +426,40 @@ if (nameLength > lastNameLength) {
   );
 }
 
-// !12
-const myAge = 27;
+// 12
+const myAge = prompt("My age is : ");
 const yourAge = prompt("Enter your age: ");
+const myAgeInt = Number(myAge);
 const yourAgeInt = Number(yourAge);
-if(yourAgeInt > myAge){
-	console.log("Your age is " + )
+if (yourAgeInt > myAgeInt) {
+  console.log(
+    "Your age is " +
+      yourAgeInt +
+      ". I am " +
+      myAgeInt +
+      ", " +
+      (yourAgeInt - myAgeInt) +
+      " years younger than you."
+  );
+} else if (yourAgeInt < myAgeInt)
+  {
+    console.log(
+      "Your age is " +
+        yourAgeInt +
+        ". I am " +
+        myAgeInt +
+        ", " +
+        (myAgeInt - yourAgeInt) +
+        " years older than you."
+    ),
+} if ( yourAgeInt === myAgeInt ) {
+		console.log(
+      "Your age is " +
+        yourAgeInt +
+        ". I am " +
+        myAgeInt +
+        " too. We are peers."
+    ),
 }
 // 13
 const wasBorn = prompt("Enter your birth year: ");
@@ -459,3 +487,27 @@ if (currentAge > allowAge) {
       " years."
   );
 }
+
+// 14
+const yearsYouLive = prompt('Enter number of years you live: ');
+const yearsToNum = Number(yearsYouLive);
+const secYouLive = (60 * 60 * 24 * 30 * 12);
+console.log( 'You lived ' + (yearsToNum * secYouLive) + ' seconds.')
+
+// 15
+const readableYear = new Date().getFullYear();
+const readableMonth = new Date().getMonth();
+const readableDay = new Date().getDay();
+const readableHour = new Date().getHours();
+const readableMin = new Date().getMinutes();
+// i 
+console.log( readableYear + '-' + readableMonth + '-' + readableDay + ' ' + readableHour + ':' + readableMin )
+// ii 
+console.log( readableDay + '-' + readableMonth + '-' + readableYear + ' ' + readableHour + ':' + readableMin )
+// iii 
+console.log( readableDay + '/' + readableMonth + '/' + readableYear + ' ' + readableHour + ':' + readableMin )
+
+// Exercises 3
+
+// 1
+console.log(readableYear + '-' + ( "0" + readableMonth).slice(-2) + '-' + ( "0" + readableDay).slice(-2) + ' ' + ( "0" + readableHour).slice(-2) + ':' + ( "0" + readableMin).slice(-2))
