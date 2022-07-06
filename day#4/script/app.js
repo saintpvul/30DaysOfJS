@@ -56,22 +56,18 @@ if (scoreNum >= 80 && scoreNum <= 100) {
   console.log("You have no grade. You are out!");
 }
 // 2
+
 const monthInput = prompt("Enter current month: ");
 const month = monthInput.toLowerCase();
 const notMonth = monthInput.toLocaleUpperCase();
-const autumn = ["september", "october", "november"];
-const winter = ["december", "january", "february"];
-const spring = ["march", "april", "may"];
-const summer = ["june", "july", "august"];
-if (month === autumn) {
+if (month == "september" || month == "october" || month == "november") {
   console.log("The Season is Autumn");
-} else if (month === winter) {
+} else if (month == "december" || month == "january" || month == "february") {
   console.log("The Season is Winter");
-} else if (month === spring) {
+} else if (month == "march" || month == "april" || month == "may") {
   console.log("The Season is Spring");
-} else if (month === summer) {
+} else if (month == "june" || month == "july" || month == "august") {
   console.log("The Season is Summer");
 } else {
   console.log("I don't get it. Is " + notMonth + " a month ?");
 }
-// !CAN'T ASSIGN MULTIPLE VALUES TO VAR
