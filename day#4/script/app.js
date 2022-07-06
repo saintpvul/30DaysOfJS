@@ -94,3 +94,30 @@ if (
 
 // Exercises 3
 // 1
+
+const monthCheck = prompt("Enter your month: ");
+const monthReturn = monthCheck.toLowerCase();
+const nonMonth = monthCheck.toLocaleUpperCase();
+const monthToUpperCase = dayToday.charAt(0).toUpperCase() + dayToday.slice(1);
+if (
+  monthReturn === "january" ||
+  monthReturn === "march" ||
+  monthReturn === "may" ||
+  monthReturn === "july" ||
+  monthReturn === "august" ||
+  monthReturn === "october" ||
+  monthReturn === "december"
+) {
+  console.log(monthToUpperCase + " has 31 days.");
+} else if (
+  monthReturn == "april" ||
+  monthReturn == "june" ||
+  monthReturn == "september" ||
+  monthReturn == "november"
+) {
+  console.log(monthToUpperCase + " has 30 days.");
+} else if (monthReturn === "february") {
+  console.log(monthToUpperCase + " has 28 days.");
+} else {
+  console.log("I don't get it. Is " + nonMonth + " a month ?");
+}
