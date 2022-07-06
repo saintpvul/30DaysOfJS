@@ -71,3 +71,26 @@ if (month == "september" || month == "october" || month == "november") {
 } else {
   console.log("I don't get it. Is " + notMonth + " a month ?");
 }
+
+// 3
+
+const whatDay = prompt("What day is today: ");
+const dayToday = whatDay.toLowerCase();
+const dayToUpperCase = dayToday.charAt(0).toUpperCase() + dayToday.slice(1);
+const notDayToday = whatDay.toLocaleUpperCase();
+if (
+  dayToday == "monday" ||
+  dayToday == "tuesday" ||
+  dayToday == "wednesday" ||
+  dayToday == "thursday" ||
+  dayToday == "friday"
+) {
+  console.log(dayToUpperCase + " is a working day.");
+} else if (dayToday == "saturday" || dayToday == "sunday") {
+  console.log(dayToUpperCase + " is a weekend.");
+} else {
+  console.log(dayToUpperCase + " is not day of the week.");
+}
+
+// Exercises 3
+// 1
