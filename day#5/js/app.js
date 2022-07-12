@@ -520,7 +520,91 @@ console.log(itCompanies[4].toUpperCase());
 console.log(itCompanies[5].toUpperCase());
 console.log(itCompanies[6].toUpperCase());
 // 12
-console.log(itCompanies.toString());
+console.log(
+  itCompanies.slice(0, 6) + " and " + itCompanies[6] + " are big IT companies."
+);
 // 13
-itCompanies ? "not found" : itCompanies;
+const toSting = itCompanies.toString();
+const StrToLow = toSting.toLowerCase();
+const p = prompt("Enter your company : ");
+const pToLow = p.toLowerCase();
+const pToCap = pToLow.charAt(0).toUpperCase() + pToLow.slice(1);
+if (StrToLow.includes(pToLow)) {
+  console.log("i got it. Your company is " + pToCap);
+} else {
+  console.log(pToCap + " is not include ");
+}
 // 14
+
+// 17
+console.log(itCompanies.slice(0, 3));
+// 18
+console.log(itCompanies.slice(4, 7));
+// 19
+console.log(itCompanies.slice(3, 4));
+// 15
+console.log(itCompanies.sort());
+// 16
+console.log(itCompanies.reverse());
+console.log("remove========");
+const itCompanies1 = [
+  "Facebook",
+  "Google",
+  "Microsoft",
+  "Apple",
+  "IBM",
+  "Oracle",
+  "Amazon",
+];
+console.log(itCompanies1);
+console.log(20);
+const shiftComp = itCompanies1.shift();
+console.log(shiftComp + " shift");
+console.log(itCompanies1);
+console.log(21);
+const itCompanies3 = [
+  "Facebook",
+  "Google",
+  "Microsoft",
+  "Apple",
+  "IBM",
+  "Oracle",
+  "Amazon",
+];
+const spliceApple = itCompanies3.splice(3, 1);
+console.log(itCompanies3);
+console.log(spliceApple + " splice");
+console.log(22);
+
+const itCompanies4 = [
+  "Facebook",
+  "Google",
+  "Microsoft",
+  "Apple",
+  "IBM",
+  "Oracle",
+  "Amazon",
+];
+
+const itCompPop = itCompanies4.pop();
+console.log(itCompanies4);
+console.log(itCompPop + " pop");
+
+console.log(23);
+
+const itCompanies5 = [
+  "Facebook",
+  "Google",
+  "Microsoft",
+  "Apple",
+  "IBM",
+  "Oracle",
+  "Amazon",
+];
+
+const spliceAll = itCompanies5.splice(0, 8);
+console.log(itCompanies5);
+console.log(" spliceAll");
+
+console.log("EXERCISES LVL 2");
+console.log("main.js");
