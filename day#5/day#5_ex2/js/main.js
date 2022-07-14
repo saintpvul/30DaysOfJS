@@ -103,17 +103,67 @@ console.log("--------------MAX AGES");
 console.log("--------------");
 console.log("1.2");
 console.log("--------------");
-let inputLength = ages.length;
+let inputLength = sortAges.length;
 let middleIndex = Math.floor(inputLength / 2);
 let oddLength = inputLength % 2 !== 0;
 let median;
 if (oddLength) {
-  median = ages[middleIndex];
+  median = sortAges[middleIndex];
 } else {
-  median = (ages[middleIndex] + ages[middleIndex - 1]) / 2;
+  median = (sortAges[middleIndex] + sortAges[middleIndex - 1]) / 2;
 }
 console.log(median);
 
 console.log("--------------");
 console.log("1.3");
 console.log("--------------");
+//  get avarage value
+const avarage = sortAges.reduce((a, b) => a + b, 0) / inputLength;
+console.log(avarage);
+
+console.log("--------------");
+console.log("1.4");
+console.log("--------------");
+
+const rangeAges = maxAges - minAges;
+console.log(rangeAges);
+
+console.log("--------------");
+console.log("1.5");
+console.log("--------------");
+
+let min = Math.min(...sortAges);
+let max = Math.max(...sortAges);
+console.log(Math.abs(min - avarage));
+console.log(Math.abs(max - avarage));
+
+console.log("--------------");
+console.log("1.5.1");
+console.log("--------------");
+const sliceCountries = countries.slice(0, 10);
+console.log(sliceCountries);
+
+console.log("--------------");
+console.log("2");
+console.log("--------------");
+
+const midCountry = countries[Math.floor((countries.length - 1) / 2)];
+console.log(midCountry);
+
+console.log("--------------");
+console.log("3");
+console.log("--------------");
+let firstHalf, secondHalf;
+if (countries.length % 2 === 0) {
+  const midIndx = Math.ceil(countries.length / 2);
+  firstHalf = countries.splice(0, midIndx);
+  secondHalf = countries.splice(-midIndx);
+
+  console.log(firstHalf, secondHalf);
+} else {
+  const midIndx = Math.ceil(countries.length / 2) - 1;
+  firstHalf = countries.splice(0, midIndx + 1);
+  secondHalf = countries.splice(-midIndx);
+
+  console.log(firstHalf, secondHalf);
+}
